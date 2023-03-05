@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">profil</th>
+        <th scope="col">Date</th>
+        <th scope="col">Comment</th>
+        <th scope="col">l</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of listPost">
+       
+
+        <td>{{t.post_text}}</td>
+        <td>{{t.post_date}}</td>
+        <td>{{t.post_comments}} comment</td>
+
+        <td>{{t.post_date }}</td>
+        <!-- <td><button (click)="show(t,t.post_date | date:"short" )">like {{t.post_reactions.likes}}</button></td> -->
+      </tr>
+  
+    </tbody>
+  </table>
